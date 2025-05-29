@@ -4,6 +4,7 @@ const app = express();
 const PORT =  3000;
 
 app.set('view engine', 'ejs');
+app.set('views', path.join(_dirname, 'views'));
 app.get('/my',(req,res)=>{
     res.send('This is my website');
 })
